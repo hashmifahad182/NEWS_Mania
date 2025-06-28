@@ -46,6 +46,7 @@ nav input{
   padding: 9px;
   font-size: 18px;
   border: none;
+  height: 20px;
 }
 .searchBar{
   display: flex;
@@ -61,6 +62,10 @@ nav input{
   font-size: 16px;
   cursor: pointer;
   
+}
+.searchBar button:hover{
+  background-color: #006eed;
+  transition: all 0.3s ease-in-out;
 }
 nav ul{
   display: flex;
@@ -109,9 +114,6 @@ nav ul{
   cursor: pointer;
   text-decoration:underline ;
 }
-.card:hover{
-  border-bottom: 1px solid black;
-}
 .card .content{
   padding: 9px;
 }
@@ -131,6 +133,11 @@ nav ul{
   font-size: 13px;
   border-radius: 5px;
   font-size: 15px;
+}
+.card button:hover{
+  background-color: #006eed;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.02);
 }
 .categoryBtn{
   display: flex;
