@@ -37,6 +37,10 @@ nav{
   cursor: pointer;
   gap: 11px;
 }
+.nav-option button:hover{
+  transform: scale(1.02);
+  text-decoration: underline;
+}
 .logo img{
   height: 50px;
 }
