@@ -11,12 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.newsApp{
+  background-image: url('./assets/back.jpg');
+  background-size: cover;
+  padding-bottom: 10px;
+}
 nav{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background-color: lightblue;
-  padding: 9px;
+  justify-content: space-between;
+  background-color: rgb(4, 6, 18);
+  padding: 19px 26px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  border-bottom: 0.005px solid rgb(2, 8, 72);
+}
+.nav-option{
+  gap:19px;
+}
+.nav-option button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 11px;
+}
+.logo img{
+  height: 50px;
 }
 nav input{
   width: 250px;
@@ -28,17 +50,17 @@ nav input{
 .searchBar{
   display: flex;
   align-items: center;
-  gap: 11px;
 }
-nav button{
-  width: 70px;
+.searchBar button{
+  width: 90px;
   height: 38px;
-  background-color: blue;
+  background-color: #04438b;
   border: none;
   border-radius: 2px;
   color: white;
   font-size: 16px;
   cursor: pointer;
+  
 }
 nav ul{
   display: flex;
@@ -55,11 +77,16 @@ nav ul{
 
 .card{
   width: 320px;
-  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
-  background-color: white;
+  color: white;
+  box-shadow: 2px 4px 4px 2px rgb(33, 32, 32);
+  background-color: transparent;
   border-radius: 3px;
   margin-top: 21px;
-  border: 1px solid rgb(236, 236, 236);
+}
+.card:hover{
+  box-shadow: 0px 4px 4px 4px #006eed;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.02);
 }
 .card img{
   width: 100%;
@@ -73,33 +100,48 @@ nav ul{
   font-size: 18px;
   margin-top: -7px;
 }
-.card .title:hover{
-  border-bottom: 1px solid black;
+.title-div{
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+.title:hover{
   cursor: pointer;
+  text-decoration:underline ;
+}
+.card:hover{
+  border-bottom: 1px solid black;
 }
 .card .content{
   padding: 9px;
 }
+.description{
+  font-size: 15px;
+  margin-bottom: 9px;
+  height: 100px;
+  margin-top: 0px;
+}
 .card button{
-  background-color: rgb(29, 162, 214);
+  background-color: #04438b;
   border: none;
   cursor: pointer;
-  width: 80px;
-  height: 28px;
+  width: 100px;
+  height: 38px;
   color: white;
   font-size: 13px;
-  border-radius: 2px;
+  border-radius: 5px;
+  font-size: 15px;
 }
 .categoryBtn{
   display: flex;
   justify-content: center;
-  gap: 11px;
+  gap: 18px;
 }
 .categoryBtn button{
   gap: 11px;
-  width: 130px;
-  height: 33px;
-  background-color: rgb(255, 108, 108);
+  width: 160px;
+  height: 38px;
+  background-color: #04438b;
   border: none;
   outline: none;
   font-size: 18px;
@@ -108,10 +150,20 @@ nav ul{
   cursor: pointer;
   padding: 2px;
 }
+.categoryBtn button:hover{
+  background-color: #006eed;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.02);
+}
 
 
 .head{
   text-align: center;
   font-weight: 600;
   font-size: 26px;
+  color: white;
+}
+.content-button{
+  display: flex;
+  justify-content: center;
 }
